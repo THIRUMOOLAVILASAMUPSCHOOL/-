@@ -158,13 +158,15 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div>
-                  <button
-                    class="btn btn-primary py-2 px-4"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
-                    Send Message
-                  </button>
+                <button
+    class="btn btn-primary py-2 px-4"
+    type="button"
+    id="sendMessageButton"
+    onclick="openWhatsAppChat()"
+>
+    Send Message
+</button>
+
                 </div>
               </form>
             </div>
@@ -340,6 +342,14 @@
     ></a>
 
     <!-- JavaScript Libraries -->
+    <script>
+function openWhatsAppChat() {
+    var phoneNumber = '8281533312';
+    var whatsappUrl = 'https://wa.me/' + phoneNumber;
+    window.open(whatsappUrl, '_blank');
+}
+</script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
